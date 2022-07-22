@@ -1,4 +1,4 @@
-function process_res(data){
+function process_respo(data){
   
     for( i = 0; i < data.results.length; i++){
     $("#results").append(JSON.stringify(data.results[i].original_title) + "<br>")
@@ -16,7 +16,7 @@ function search_(){
     $.ajax({
         "url": `https://api.themoviedb.org/3/search/movie?api_key=d8fcbb65bbe42ec3406ca275457c6f6f&language=en-US&query=${m}&page=1&include_adult=false`,
         "type": "Get",
-        "success": process_res
+        "success": process_respo
     })
 }
     
