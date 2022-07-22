@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="lab81.js"> </script>
+    <style>
+
+        .addClass {
+            background-color:rgb(128, 9, 9)
+        }
+        .subClass {
+            background-color:rgb(180, 129, 17)
+        }
+        .multClass {
+            background-color:rgb(184, 187, 41)
+        }
+        .divClass {
+            background-color:rgb(67, 128, 9)
+        }
+
+    </style>
+</head>
+<body>
+
+    <div>First operand <input id="op1" value="2"></input></div>
+    <div>Second operand <input id="op2" value="5"></input><div>
+    <button class="button" id="add"> + </button>
+    <button class="button" id="sub"> - </button>
+    <button class="button" id="mult"> * </button>
+    <button class="button" id="div"> / </button>
+    <div> Result: <span id="finalR"> </span> </div>
+
+
+    <h2> History</h2>
+    <!-- <button id="showButton"> SHOW </button>-->
+    <!-- <button id="hideButton"> HIDE </button>-->
+    <div id="history"></div>
+      
+</body>
+</html>
