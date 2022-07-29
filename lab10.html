@@ -1,0 +1,154 @@
+<html>
+<head>
+<title>Document</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
+<script src="lab10.css"> </script>
+</head>
+<style>
+    h1 {
+        text-align: center;
+        color:rgb(184, 17, 17);
+        font-family:Arial, Helvetica, sans-serif;
+    }
+     nav {
+
+            background-color: rgb(114, 6, 6);
+            display: flex;
+            justify-content: space-between;
+    
+     }
+    nav a {
+            display: inline-block;
+            padding: 10px;
+
+            color: #f2f2f2;
+            text-decoration: none;
+
+            padding: 14px 16px;
+            text-align: center;
+    }
+
+    nav a:hover {
+            background-color: f2f2f2;
+            color: #333;
+        }
+
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        background-color: rgb(245, 231, 231);
+    }
+
+    img{
+        width: 100%;
+        border-radius: 5px;
+        padding-top: 10px
+    }
+
+    .pictures{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+   
+    .dummy_div{
+    display: flex;
+   }
+
+   .footer{
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(238, 212, 212);
+   }
+
+   @media screen and (max-width: 550px){
+        main{
+            flex-direction: column;
+            gap: 0;
+        }
+        nav {
+            flex-direction: column;
+        }
+        .dummy_div{
+            flex-direction: column;
+        }
+    }
+
+
+
+
+</style>
+
+<body>
+    <h1>
+        Pretty Pictures 
+    </h1>
+    <nav>
+        <div class="dummy_div">
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="">Link 3</a>
+        </div>
+        <a href="" style="float:right;">Link 4</a>
+        
+    </nav>
+    <main>
+    <section>
+        
+        <div class="pictures">
+            <div class="container">
+        <img src="https://picsum.photos/300/200?random=1371">
+            </div>
+            <div class="container">
+        <img src="https://picsum.photos/300/200?random=1372">
+            </div>
+            <div class="container">
+        <img src="https://picsum.photos/300/200?random=1373">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        
+        <div class="pictures">
+            <div class="container">
+        <img src="https://picsum.photos/300/200?random=1374">
+            </div>
+            <div class="container">
+        <img src="https://picsum.photos/300/200?random=1375">
+            </div>
+            <div class="container">
+        <img src="https://picsum.photos/300/200?random=1376">
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        
+        <div class="pictures">
+            <div class="container">
+        <img src="https://picsum.photos/300/200?random=1377">
+            </div>
+            <div class="container">
+        <img src="https://picsum.photos/300/200?random=1378">
+            </div>
+            <div class="container">
+        <img src="https://picsum.photos/300/200?random=1379">
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer class="footer">
+        COPYRIGHT © THIS IS MINE
+    </footer>
+</body>
+
+
+
+
