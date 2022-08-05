@@ -11,6 +11,7 @@
     <style>
         body{
             background-color: black;
+            background-image: url("img_tree.gif")
         }
 
         article {
@@ -22,23 +23,53 @@
             float: left
         }
 
+        .dummy_div{
+            font-size: 10;
+        }
+
         h1 {
-            background-color: rgb(75, 75, 75);
+            background-color: rgb(49, 49, 49);
             padding: 10px;
             display:flex;
             justify-content: space-around;
+            
         }
+        @media screen and (max-width: 550px){
+        body{
+            flex-direction: column;
+            gap: 0;
+        }
+        h1 {
+            flex-direction: column;
+        }
+        .dummy_div{
+            flex-direction: column;
+        }
+
+        }
+        h1 a {
+            display: inline-block;
+            padding: 10px;
+
+            color: #505050;
+            text-decoration: none;
+
+            text-align: left;
+            font-size: 50%;
+        }
+
     </style>
 
 </head>
 
 <body>
     <h1>
-        Home 
-        Trending
-        Browse movies
-        Login|Register
-
+        <div class="dummy_div">
+        <a href="">Home</a>
+        <a href="">Trending 2</a>
+        <a href="">Browse Movies</a>
+        <a href="">Login|Register</a>
+        </div>
     </h1>
 
     <select  id="page_size">
