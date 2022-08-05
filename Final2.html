@@ -10,9 +10,9 @@
     
     <style>
         article {
-            width: 50%;
             float: center;
             color: white;
+            margin:0px
         }
 
         #results{
@@ -35,6 +35,22 @@
             padding: 15px; 
             color: rgb(109, 109, 109);
         }
+        @media screen and (max-width: 550px){
+        body{
+            flex-direction: column;
+            gap: 0;
+            padding:0;
+        }
+        #results {
+            flex-direction: column;
+            gap:0;
+            margin:0px 
+        }
+        article {
+            margin:0px
+        }
+       
+    }
 
     </style>
 
